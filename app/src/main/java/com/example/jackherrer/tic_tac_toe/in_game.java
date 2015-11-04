@@ -61,17 +61,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                 if (p00 == "?") {
                     if (p1_turn) {
                         ((Button) findViewById(R.id.b00)).setText("X");
-                        p1_turn = !p1_turn;
                         p00 = "x";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
 
 
                     } else {
                         ((Button) findViewById(R.id.b00)).setText("O");
-                        p1_turn = !p1_turn;
                         p00 = "o";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
                     }
                 }
@@ -79,17 +79,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                 if (p01 == "?") {
                     if (p1_turn) {
                         ((Button) findViewById(R.id.b01)).setText("X");
-                        p1_turn = !p1_turn;
                         p01 = "x";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
 
 
                     } else {
                         ((Button) findViewById(R.id.b01)).setText("O");
-                        p1_turn = !p1_turn;
                         p01 = "o";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
                     }
                 }
@@ -97,17 +97,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                 if (p02 == "?") {
                     if (p1_turn) {
                         ((Button) findViewById(R.id.b02)).setText("X");
-                        p1_turn = !p1_turn;
                         p02 = "x";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
 
 
                     } else {
                         ((Button) findViewById(R.id.b02)).setText("O");
-                        p1_turn = !p1_turn;
                         p02 = "o";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
                     }
                 }
@@ -115,17 +115,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                 if (p10 == "?") {
                     if (p1_turn) {
                         ((Button) findViewById(R.id.b10)).setText("X");
-                        p1_turn = !p1_turn;
                         p10 = "x";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
 
 
                     } else {
                         ((Button) findViewById(R.id.b10)).setText("O");
-                        p1_turn = !p1_turn;
                         p10 = "o";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
                     }
                 }
@@ -133,17 +133,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                 if (p11 == "?") {
                     if (p1_turn) {
                         ((Button) findViewById(R.id.b11)).setText("X");
-                        p1_turn = !p1_turn;
                         p11 = "x";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
 
 
                     } else {
                         ((Button) findViewById(R.id.b11)).setText("O");
-                        p1_turn = !p1_turn;
                         p11 = "o";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
                     }
                 }
@@ -151,17 +151,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                 if (p12 == "?") {
                     if (p1_turn) {
                         ((Button) findViewById(R.id.b12)).setText("X");
-                        p1_turn = !p1_turn;
                         p12 = "x";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
 
 
                     } else {
                         ((Button) findViewById(R.id.b12)).setText("O");
-                        p1_turn = !p1_turn;
                         p12 = "o";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
                     }
                 }
@@ -169,17 +169,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                 if (p20 == "?") {
                     if (p1_turn) {
                         ((Button) findViewById(R.id.b20)).setText("X");
-                        p1_turn = !p1_turn;
                         p20 = "x";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
 
 
                     } else {
                         ((Button) findViewById(R.id.b20)).setText("O");
-                        p1_turn = !p1_turn;
                         p20 = "o";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
                     }
                 }
@@ -187,17 +187,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                 if (p21 == "?") {
                     if (p1_turn) {
                         ((Button) findViewById(R.id.b21)).setText("X");
-                        p1_turn = !p1_turn;
                         p21 = "x";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
 
 
                     } else {
                         ((Button) findViewById(R.id.b21)).setText("O");
-                        p1_turn = !p1_turn;
                         p21 = "o";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
                     }
                 }
@@ -205,17 +205,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                 if (p22 == "?") {
                     if (p1_turn) {
                         ((Button) findViewById(R.id.b22)).setText("X");
-                        p1_turn = !p1_turn;
                         p22 = "x";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
 
 
                     } else {
                         ((Button) findViewById(R.id.b22)).setText("O");
-                        p1_turn = !p1_turn;
                         p22 = "o";
                         checkWin();
+                        p1_turn = !p1_turn;
                         break;
                     }
                 }
