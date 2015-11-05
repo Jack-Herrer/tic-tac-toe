@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">tic-tac-toe</string>
+    <string name="xWin">PLAYER X WINS!</string>
+    <string name="oWin">PLAYER O WINS!</string>
 </resources>
