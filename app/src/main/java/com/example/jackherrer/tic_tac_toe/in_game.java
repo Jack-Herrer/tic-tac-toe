@@ -183,7 +183,10 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                             p1_turn = !p1_turn;
                             break;
                         }
+
                     }
+                    break;
+
                 case R.id.b01:
                     if (p01 == "?") {
                         if (p1_turn) {
@@ -202,6 +205,8 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                             break;
                         }
                     }
+                    break;
+
                 case R.id.b02:
                     if (p02 == "?") {
                         if (p1_turn) {
@@ -220,6 +225,8 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                             break;
                         }
                     }
+                    break;
+
                 case R.id.b10:
                     if (p10 == "?") {
                         if (p1_turn) {
@@ -238,6 +245,8 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                             break;
                         }
                     }
+                    break;
+
                 case R.id.b11:
                     if (p11 == "?") {
                         if (p1_turn) {
@@ -256,6 +265,8 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                             break;
                         }
                     }
+                    break;
+
                 case R.id.b12:
                     if (p12 == "?") {
                         if (p1_turn) {
@@ -274,6 +285,8 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                             break;
                         }
                     }
+                    break;
+
                 case R.id.b20:
                     if (p20 == "?") {
                         if (p1_turn) {
@@ -292,6 +305,8 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                             break;
                         }
                     }
+                    break;
+                
                 case R.id.b21:
                     if (p21 == "?") {
                         if (p1_turn) {
@@ -310,6 +325,8 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                             break;
                         }
                     }
+                    break;
+
                 case R.id.b22:
                     if (p22 == "?") {
                         if (p1_turn) {
@@ -328,6 +345,7 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                             break;
                         }
                     }
+                    break;
             }
         }
 
