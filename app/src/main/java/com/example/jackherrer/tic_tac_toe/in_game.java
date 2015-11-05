@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class in_game extends AppCompatActivity implements View.OnClickListener {
@@ -38,6 +39,8 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
 
 
     }
+
+
     //restart function
     public void newGame(View view){
 
@@ -91,7 +94,17 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                     || (p02.equals("x") && p11.equals("x") && p20.equals("x"))
                     ) {
                 Toast.makeText(this, R.string.xWin, Toast.LENGTH_LONG).show();
+                TextView xturn = (TextView) findViewById(R.id.xturn);
+                TextView oturn = (TextView) findViewById(R.id.oturn);
+                oturn.setVisibility(View.VISIBLE);
+                xturn.setVisibility(View.INVISIBLE);
                 endgame = true;
+            }
+            else{
+                TextView xturn = (TextView) findViewById(R.id.xturn);
+                TextView oturn = (TextView) findViewById(R.id.oturn);
+                oturn.setVisibility(View.VISIBLE);
+                xturn.setVisibility(View.INVISIBLE);
             }
 
         }
@@ -107,6 +120,16 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                     ) {
                 Toast.makeText(this, R.string.oWin, Toast.LENGTH_LONG).show();
                 endgame = true;
+                TextView xturn = (TextView) findViewById(R.id.xturn);
+                TextView oturn = (TextView) findViewById(R.id.oturn);
+                xturn.setVisibility(View.VISIBLE);
+                oturn.setVisibility(View.INVISIBLE);
+            }
+            else{
+                TextView xturn = (TextView) findViewById(R.id.xturn);
+                TextView oturn = (TextView) findViewById(R.id.oturn);
+                xturn.setVisibility(View.VISIBLE);
+                oturn.setVisibility(View.INVISIBLE);
             }
         }
 

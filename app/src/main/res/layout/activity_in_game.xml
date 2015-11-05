@@ -94,16 +94,45 @@
                 android:id="@+id/b22"
                 android:textSize="50sp"
                 android:layout_weight="1" />
+
         </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Game"
-        android:id="@+id/newGameButton"
-        android:onClick="newGame"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="X"
+            android:id="@+id/xturn"
+            android:textSize="50sp"
+            android:layout_marginLeft="40dp"
+            android:visibility="visible"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Game"
+            android:id="@+id/newGameButton"
+            android:onClick="newGame"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="O"
+            android:id="@+id/oturn"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
 
 
 </LinearLayout>
