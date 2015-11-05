@@ -38,6 +38,33 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
 
 
     }
+    //restart function
+    public void newGame(View view){
+
+        //reset position values
+        p00 = "?";
+        p01 = "?";
+        p02 = "?";
+        p10 = "?";
+        p11 = "?";
+        p12 = "?";
+        p20 = "?";
+        p21 = "?";
+        p22 = "?";
+
+        //clear button text
+        ((Button) findViewById(R.id.b00)).setText("");
+        ((Button) findViewById(R.id.b01)).setText("");
+        ((Button) findViewById(R.id.b02)).setText("");
+        ((Button) findViewById(R.id.b10)).setText("");
+        ((Button) findViewById(R.id.b11)).setText("");
+        ((Button) findViewById(R.id.b12)).setText("");
+        ((Button) findViewById(R.id.b20)).setText("");
+        ((Button) findViewById(R.id.b21)).setText("");
+        ((Button) findViewById(R.id.b22)).setText("");
+
+        endgame = false;
+    }
 
 
     // Initialise positions
@@ -84,7 +111,6 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
         }
 
     }
-
 
 
     @Override
