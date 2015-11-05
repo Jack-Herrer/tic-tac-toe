@@ -11,6 +11,8 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
 
     boolean p1_turn = true;
     boolean endgame = false;
+    int xscore = 0;
+    int oscore = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,14 +95,26 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                     || (p00.equals("x") && p11.equals("x") && p22.equals("x"))
                     || (p02.equals("x") && p11.equals("x") && p20.equals("x"))
                     ) {
+
+                //Show winner x
                 Toast.makeText(this, R.string.xWin, Toast.LENGTH_LONG).show();
+
+                //Change turn indicator
                 TextView xturn = (TextView) findViewById(R.id.xturn);
                 TextView oturn = (TextView) findViewById(R.id.oturn);
                 oturn.setVisibility(View.VISIBLE);
                 xturn.setVisibility(View.INVISIBLE);
+
+                //update score (easy way)
+                xscore++;
+                TextView xscoreView = (TextView) findViewById(R.id.xscoreView);
+                xscoreView.setText(""+xscore);
+
                 endgame = true;
             }
             else{
+
+                //change turn indicator
                 TextView xturn = (TextView) findViewById(R.id.xturn);
                 TextView oturn = (TextView) findViewById(R.id.oturn);
                 oturn.setVisibility(View.VISIBLE);
@@ -118,14 +132,26 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                     || (p00.equals("o") && p11.equals("o") && p22.equals("o"))
                     || (p02.equals("o") && p11.equals("o") && p20.equals("o"))
                     ) {
+
+                // show o winner
                 Toast.makeText(this, R.string.oWin, Toast.LENGTH_LONG).show();
-                endgame = true;
+
+                // change turn indicator
                 TextView xturn = (TextView) findViewById(R.id.xturn);
                 TextView oturn = (TextView) findViewById(R.id.oturn);
                 xturn.setVisibility(View.VISIBLE);
                 oturn.setVisibility(View.INVISIBLE);
+
+                // update score (other way)
+                oscore++;
+                TextView oscoreView = (TextView) findViewById(R.id.oscoreView);
+                oscoreView.setText(String.valueOf(oscore));
+
+                endgame = true;
             }
             else{
+
+                // change turn indicator
                 TextView xturn = (TextView) findViewById(R.id.xturn);
                 TextView oturn = (TextView) findViewById(R.id.oturn);
                 xturn.setVisibility(View.VISIBLE);
