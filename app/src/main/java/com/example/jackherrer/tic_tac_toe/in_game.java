@@ -14,6 +14,7 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
     int xscore = 0;
     int oscore = 0;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -306,7 +307,7 @@ public class in_game extends AppCompatActivity implements View.OnClickListener {
                         }
                     }
                     break;
-                
+
                 case R.id.b21:
                     if (p21 == "?") {
                         if (p1_turn) {
